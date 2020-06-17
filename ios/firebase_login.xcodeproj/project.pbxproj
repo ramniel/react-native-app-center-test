@@ -19,6 +19,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* firebase_loginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* firebase_loginTests.m */; };
 		3BDDF152FB566834604D0BE6 /* libPods-firebase_login-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30750DCADC8C452A0C16CD02 /* libPods-firebase_login-tvOSTests.a */; };
 		AE226690B5E4CA1D16CEFCE7 /* libPods-firebase_login.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCEBA58BD8E81FA83203DC62 /* libPods-firebase_login.a */; };
+		BD06C528249A687B00278A34 /* AppCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD06C527249A687B00278A34 /* AppCenter-Config.plist */; };
 		CD00A1713AE5CAF306B629E5 /* libPods-firebase_login-firebase_loginTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A2B55DB0C717C1720FF236 /* libPods-firebase_login-firebase_loginTests.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		96C7C93A57E53BC7F092D157 /* Pods-firebase_login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebase_login.debug.xcconfig"; path = "Target Support Files/Pods-firebase_login/Pods-firebase_login.debug.xcconfig"; sourceTree = "<group>"; };
 		A710DAE04CB0BC4F2558525E /* Pods-firebase_login-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebase_login-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-firebase_login-tvOSTests/Pods-firebase_login-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		BB6F630EED1DC3CAF63CE9FE /* libPods-firebase_login-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-firebase_login-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD06C527249A687B00278A34 /* AppCenter-Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AppCenter-Config.plist"; sourceTree = "<group>"; };
 		CBE5B4A767C595E995A6A27A /* Pods-firebase_login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebase_login.release.xcconfig"; path = "Target Support Files/Pods-firebase_login/Pods-firebase_login.release.xcconfig"; sourceTree = "<group>"; };
 		D9A2B55DB0C717C1720FF236 /* libPods-firebase_login-firebase_loginTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-firebase_login-firebase_loginTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -134,7 +136,6 @@
 				496DA19A8762D6A219A7DB5F /* Pods-firebase_login-tvOSTests.debug.xcconfig */,
 				A710DAE04CB0BC4F2558525E /* Pods-firebase_login-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,6 +176,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				BD06C527249A687B00278A34 /* AppCenter-Config.plist */,
 				13B07FAE1A68108700A75B9A /* firebase_login */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* firebase_loginTests */,
@@ -292,6 +294,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = ZKBLCK5L4B;
 						LastSwiftMigration = 1120;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -340,6 +343,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				BD06C528249A687B00278A34 /* AppCenter-Config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,6 +634,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZKBLCK5L4B;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -642,7 +647,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kreitech.teamdevops;
 				PRODUCT_NAME = firebase_login;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -657,6 +662,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZKBLCK5L4B;
 				INFOPLIST_FILE = firebase_login/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -664,7 +670,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kreitech.teamdevops;
 				PRODUCT_NAME = firebase_login;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
